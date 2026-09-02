@@ -24,6 +24,7 @@ c:\Users\2027\Documents\Skill\
 
 ## 常用参考文档
 
+- 三个库通用口令：见 [README.md](README.md)（归档 / 上传 / 整理 / 回归 / 同步）。`daily` 已并入 grok-notes。
 - 单个 skill 安装方法：查看该 skill 目录下的 `INSTALL.md` 或 `README.md` 中的「安装到 IDE」章节
 - Trae 自定义 Agent 绑定 Skill：参考 [trae-custom-agent-skill-guide.md](file:///c:/Users/2027/Documents/Skill/trae-custom-agent-skill-guide.md)
 - 通用 IDE 目录速查：Claude Code 为 `.claude/skills/`（或 `~/.claude/skills/`），Cursor 为 `.cursor/skills/`
