@@ -15,13 +15,16 @@
 | consultant | 用户在其他对话中创建，源文件 `c:\Users\2027\Documents\Skill\consultant_SKILL.md` | 咨询顾问协作模式：通过开工/挂起/换脑/记教训/入库仪式，把项目状态外化到文件，防止上下文漂移 | skills/consultant/ | 2026-07-30 | 已收录 |
 | grill-me | 用户在其他对话中创建，原始文件 `skills/grill-me.md` | 压力测试面试 skill：通过连续追问暴露设计/计划中的假设、理清决策树，直到达成共识 | skills/grill-me/ | 2026-08-09 | 已收录 |
 | understand-anything | https://github.com/Egonex-AI/Understand-Anything | Claude Code 插件：多 agent 流水线把代码库构建成知识图谱 + 交互式 dashboard 可视化探索（只登记，未收录源码） | skills/understand-anything/ | 2026-08-14 | 待验证 |
-| lieflat-charts | https://github.com/larashero3-dotcom/lieflat-charts | 数据可视化 skill：48 个图表模板 + 设计语法，单色/青瓷蓝/椰林绿/编辑部红四套色彩体系，说人话出专业图表（只登记，未收录源码） | skills/lieflat-charts/ | 2026-08-18 | 待验证 |
+| lieflat-charts | https://github.com/larashero3-dotcom/lieflat-charts | 数据可视化 skill：模板与设计语法驱动；当前收录版含 61 个图表模板、12 套中英报告模板及 Mono/三套色彩预设 | skills/lieflat-charts/source/ | 2026-09-05 | 已收录，待使用验证 |
 | bento-slides | https://github.com/nyblnet/bento | 单文件 HTML 演示工具 + Claude Code skill：文件即软件（560KB 装下编辑器/查看器/演示器），AI 直接编辑结构化 JSON 生成演示文稿（只登记，未收录源码） | skills/bento-slides/ | 2026-08-19 | 待验证 |
 | teach | https://github.com/mattpocock/skills | stateful 教学 skill：把 AI agent 变成私人老师，在当前目录建教学工作区（mission/resources/lessons/learning-records），跨会话按最近发展区定制课程（只登记，未收录源码） | skills/teach/ | 2026-08-19 | 待验证 |
 | officecli | https://github.com/iOfficeAI/OfficeCLI | 专为 AI 智能体设计的 Office 套件：单一二进制零依赖全平台，内置 HTML 渲染引擎让 AI 生成文档后能自己检查排版，闭合"渲染→看→改"循环（只登记，未收录源码） | skills/officecli/ | 2026-08-19 | 待验证 |
 | logo-generator | https://github.com/op7418/logo-generator-skill | 专业 SVG logo 生成 skill：6+ 设计变体 + 12 种专业展示背景，集成 Gemini Nano Banana 生成高端展示图（只登记，未收录源码） | skills/logo-generator/ | 2026-08-19 | 待验证 |
 | writing-for-agents | https://github.com/mattpocock/skills | 元方法论 skill：教你怎么写 agent 能可靠执行的文档（skill、AGENTS.md、CLAUDE.md），涵盖 context pointer、信息层级、完成标准、引导词、修剪纪律（只登记，未收录源码） | skills/writing-for-agents/ | 2026-08-19 | 待验证 |
 | compound-engineering | https://github.com/EveryInc/compound-engineering-plugin | AI 原生工程哲学插件：80% 精力投入计划与审查、20% 用于执行与沉淀，四步循环 Plan→Work→Review→Compound，让每个工程单元都比上一个更容易（只登记，未收录源码） | skills/compound-engineering/ | 2026-08-19 | 待验证 |
+| qu-ai-wei | https://github.com/LifelongLazyLearner/qu-ai-wei | 简体中文去 AI 味 Agent Skill：重组表达并清理套话、机械结构和翻译腔，同时保留事实、证据强度、语体和原文声口 | skills/qu-ai-wei/ | 2026-09-05 | 已收录并已安装到 Codex |
+| molio | https://github.com/zhuzhaoyun/Molio | Local-first 个人知识层：Markdown 库 → wiki 图谱 → agent 检索问答（无向量库/RAG）；桌面版 v0.3.54 已装于本服务器，Tailscale 远程可访（https://cli.tail65348f.ts.net）；本目录含源码调研、安装实录与访问方式，非 IDE skill | skills/molio/ | 2026-09-06 | 已收录 |
+| graphify | https://github.com/Graphify-Labs/graphify | CLI + Skill：tree-sitter 把代码/文档建成可查询知识图谱；`graphifyy` 包提供命令，`graphify install` 写入助手 skill（只登记，未收录源码） | skills/graphify/ | 2026-09-20 | 待验证 |
 
 ## 登记说明
 

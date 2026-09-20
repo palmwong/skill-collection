@@ -6,8 +6,8 @@
 
 ## 当前状态
 
-- 更新日期：2026-08-19
-- 已收录 skill 数量：14（其中 understand-anything、lieflat-charts、bento-slides、teach、officecli、logo-generator、writing-for-agents、compound-engineering 为只登记，状态：待验证）
+- 更新日期：2026-09-20
+- 已收录 skill 数量：17（其中 understand-anything、bento-slides、teach、officecli、logo-generator、writing-for-agents、compound-engineering、graphify 为只登记，状态：待验证）
 - 已收录清单：
   - cangjie-skill（袋鼠帝）：元 skill，把书/长视频/播客蒸馏成可调用 skills，RIA-TV++ 流水线，详见 skills/cangjie-skill/README.md
   - ai-agent-book（李博杰）：开源图书《深入理解 AI Agent：设计原理与工程实践》+ 93 个配套实验项目，详见 skills/ai-agent-book/README.md
@@ -16,13 +16,15 @@
   - consultant（用户在其他对话中创建）：咨询顾问协作模式，通过仪式化协作防止上下文漂移，详见 skills/consultant/README.md
   - grill-me（用户自建）：压力测试面试 skill，通过连续追问暴露设计/计划中的假设、理清决策树，详见 skills/grill-me/README.md
   - understand-anything（Egonex-AI / Lum1104）：Claude Code 插件，多 agent 流水线把代码库构建成知识图谱 + 交互式 dashboard，只登记未收录源码，详见 skills/understand-anything/README.md
-  - lieflat-charts（larashero3-dotcom）：数据可视化 skill，48 个图表模板 + 四套色彩体系，说人话出专业图表，只登记未收录源码，详见 skills/lieflat-charts/README.md
+  - lieflat-charts（larashero3-dotcom）：数据可视化与报告生成 skill；已收录上游源码至 `skills/lieflat-charts/source/`，当前含 61 个图表模板、12 套中英报告模板与四套色彩体系；尚未进行实际出图验证，详见 `skills/lieflat-charts/README.md`
   - bento-slides（nyblnet）：单文件 HTML 演示工具 + Claude Code skill，文件即软件，AI 直接编辑结构化 JSON 生成演示文稿，只登记未收录源码，详见 skills/bento-slides/README.md
   - teach（Matt Pocock）：stateful 教学 skill，把 AI agent 变成私人老师，跨会话按最近发展区定制课程，只登记未收录源码，详见 skills/teach/README.md
   - officecli（iOfficeAI）：专为 AI 智能体设计的 Office 套件，单一二进制零依赖全平台，内置 HTML 渲染引擎闭合"渲染→看→改"循环，只登记未收录源码，详见 skills/officecli/README.md
   - logo-generator（op7418）：专业 SVG logo 生成 skill，6+ 设计变体 + 12 种专业展示背景，集成 Gemini Nano Banana，只登记未收录源码，详见 skills/logo-generator/README.md
   - writing-for-agents（Matt Pocock）：元方法论 skill，教你怎么写 agent 能可靠执行的文档，涵盖 context pointer、信息层级、完成标准、引导词、修剪纪律，只登记未收录源码，详见 skills/writing-for-agents/README.md
   - compound-engineering（Every Inc）：AI 原生工程哲学插件，80% 精力投入计划与审查、20% 用于执行与沉淀，四步循环 Plan→Work→Review→Compound，只登记未收录源码，详见 skills/compound-engineering/README.md
+  - molio（zhuzhaoyun）：Local-first 个人知识层，Markdown 库 → wiki 图谱 → agent 检索问答（无向量库/RAG）；桌面版 v0.3.54 已装于本服务器并通过 Tailscale 远程可访（https://cli.tail65348f.ts.net）；目录含源码调研、安装实录与访问方式，详见 skills/molio/README.md
+  - graphify（Graphify Labs）：CLI + Skill，tree-sitter 知识图谱，PyPI `graphifyy`，只登记未收录源码，详见 skills/graphify/README.md
 - 已完成的工作：
   - 建立目录结构：`skills/` 子文件夹
   - 创建 `memo.md`（skill 登记总表）
@@ -39,13 +41,18 @@
   - 收录 `skills/grill-me/`：将散落的 `skills/grill-me.md` 迁移到子目录，修复 SKILL.md 中 ``\---`` 为 ``---``，补齐 README.md 与 INSTALL.md，并在 `memo.md` 登记
   - 2026-08-09：仓库从 `d:\working\Skill` 迁移到 `c:\Users\2027\Documents\Skill`，批量替换 AGENTS.md / memo.md / skills\_template.md / 各 skill 的 INSTALL.md / consultant 的 README.md 中的旧路径，原文件已备份至 `history/`（时间戳 20260809-1135）
   - 2026-08-14：收录 `skills/understand-anything/`（README.md + INSTALL.md，只登记未克隆源码），在 `memo.md` 登记（状态：待验证）
-  - 2026-08-18：收录 `skills/lieflat-charts/`（README.md + INSTALL.md，只登记未克隆源码），在 `memo.md` 登记（状态：待验证），信息来源为 B 站视频 BV1DiGG6JEAo + 原仓库 README
+  - 2026-08-18：登记 `skills/lieflat-charts/`（README.md + INSTALL.md），信息来源为培训视频与原仓库 README
+  - 2026-09-05：根据培训转写稿及上游一手资料，收录 `skills/lieflat-charts/source/`；确认培训稿中的 48 张模板为早期版本，当前目录为 61 个图表模板与 12 套报告模板；未安装到本机 Agent，待实际出图验证
   - 2026-08-19：收录 `skills/bento-slides/`（README.md + INSTALL.md，只登记未克隆源码），在 `memo.md` 登记（状态：待验证），信息来源为 B 站视频 BV1tebi6oEYV + 原仓库 README
   - 2026-08-19：收录 `skills/teach/`（README.md + INSTALL.md，只登记未克隆源码），在 `memo.md` 登记（状态：待验证），源文件来自 mattpocock/skills 仓库的 skills/productivity/teach/，培训文档见 notes/teach-skill-training.md
   - 2026-08-19：收录 `skills/officecli/`（README.md + INSTALL.md，只登记未克隆源码），在 `memo.md` 登记（状态：待验证），信息来源为用户提供的视频文案 + 原仓库 README
   - 2026-08-19：收录 `skills/logo-generator/`（README.md + INSTALL.md，只登记未克隆源码），在 `memo.md` 登记（状态：待验证），信息来源为 B 站视频 BV1YRVy6nE7q + 原仓库 README，注意视频实际指向图叙AI平台模板，本仓库收录的是 op7418 的开源替代品
   - 2026-08-19：收录 `skills/writing-for-agents/`（README.md + INSTALL.md，只登记未克隆源码），在 `memo.md` 登记（状态：待验证），源文件来自 mattpocock/skills 仓库的 skills/productivity/writing-for-agents/
   - 2026-08-19：收录 `skills/compound-engineering/`（README.md + INSTALL.md，只登记未克隆源码），在 `memo.md` 登记（状态：待验证），信息来源为原仓库 README + Every.to 官方指南 + 第三方评测
+
+  - 2026-09-05：收录 `skills/qu-ai-wei/`（保留原始 `SKILL.md`、`references/` 与 Codex 元数据），新增 `INSTALL.md`，在 `memo.md` 登记；来源为 LifelongLazyLearner/qu-ai-wei（MIT）。
+  - 2026-09-06：收录 skills/molio/（README.md + INSTALL.md 安装实录 + 工作原理.md 源码调研）：Local-first 个人知识层（zhuzhaoyun/Molio，修改版 Apache 2.0，个人自用无合规障碍）；桌面版 v0.3.54 静默装于 C:/Program Files/Molio，知识库 D:/molio-vault，Codex 运行时端到端验证通过，Tailscale serve 远程可访 https://cli.tail65348f.ts.net；在 memo.md 登记
+  - 2026-09-20：收录 `skills/graphify/`（README.md + INSTALL.md，只登记未克隆源码）。形态是 CLI（PyPI `graphifyy`）+ `graphify install` 写入的 skill；在 `memo.md` 登记（状态：待验证）
 
 ## 待办事项
 
